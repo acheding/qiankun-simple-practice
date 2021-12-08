@@ -1,7 +1,7 @@
 # qiankun简单实践
 
 #### 介绍
-基于vue2和webpack的qiankun微前端简单实践，并通过store实现了主应用向微应用通信。
+基于 vue2 和 webpack 的 qiankun 微前端简单实践，并通过 store 实现了主应用向微应用通信。
 
 #### 安装教程
 
