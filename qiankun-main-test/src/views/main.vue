@@ -5,6 +5,7 @@
       <el-input
         placeholder="Please input the value emitted to micro"
         v-model="input"
+        @keyup.enter.native="emitMain"
       >
         <el-button
           slot="append"
@@ -26,6 +27,10 @@ export default {
   methods: {
     emitMain() {
       this.$store.commit("saveMain", this.input); // 向 store 中存入传递给微应用的值
+      this.$notify({
+        title: "发送成功",
+        message: this.input
+      });
     }
   }
 };
